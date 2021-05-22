@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/style.css">
+   <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+   <title>Touch Me</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav class="bg-a1 pad-nav-a" id="navbar">
+      <div class="navbar m0" id="nav-item">
+         <a href="#float">Float</a>
+         <a href="#width">Width</a>
+         <a href="#margin">Margin</a>
+         <a href="#font">Font</a>
+      </div>
+   </nav>
+
+   <!-- Jumbotron -->
+   <div class="jumbotron">
+      <p class="jtron-title">Touch Me</p>
+      <p class="jtron-text">Touch the <button class="button a-fx button-green" id="touch">button</button> and
+         Bwahhh....
+      </p>
+   </div>
+
+   <!-- Main Content -->
+   <main>
+      <div class="container f-l" id="content">
+
+         <!-- Intro Article -->
+         <div class="card" id="float">
+            <article>
+               <h1>Penerapan HTML, CSS, dan JavaScript</h1>
+               <br>
+               <div class="w100">
+                  <div class="f-l" id="float-button">
+                     <button class="button button-green float" id="float-a">Content-Aside</button>
+                     <button class="button button-green float" id="float-b">Float Button</button>
+                  </div>
+               </div>
+               <br>
+               <p>
+                  Sejak diluncurkannya website pertama pada 23 Agustus 1991, website mengalami perubahan yang sangat
+                  signifikan. Pada awalnya, website hanya menampilan interface yang apa adanya. Hanya dengan fitur -
+                  fitur sederhanaa seperti <i>anchor</i>.
+               </p>
+               <p>Sekarang, website menjadi platform yang populer, karena menyediakan antarmuka yang menarik, atau biasa
+                  disebut dengan UI(User Interface). Banyak sekali pilar - pilar yang dapat membangun website, seperti
+                  HTML sebagai kerangkanya, CSS sebagai hiasannya, dan JavaScript sebagai otaknya. Kali ini, kita akan
+                  melihat penerapan dari ketiga komponen utama ini. Ayo, <strong>tekan tombol</strong> di atas untuk
+                  melihat effect dari penggunaan JavaScript dalam mengubah attribute dan nilainya.
+               </p>
+               <p>Udah dicoba blom? Menarik bukan. Masih banyak lagi attribut yang dapat kita ubah secara
+                  <i>realtime</i>. Bukan cuman <i>attribut</i> aja, tapi juga bisa mengubah tag, hingga mengubah
+                  content. Di bawah masih banyak contoh - contoh
+                  penerapan HTML, CSS, dan JavaScript, dan semua itu bisa kita pelajari di <a
+                     href="dicoding.com">Dicoding</a>. Oh iya, mumpung ada beasiswa dari Indosat Ooredoo, yaitu dengan
+                  program IDCamp, tunggu apa lagi.... Kuyh daftar di <a
+                     href="https://idcamp.indosatooredoo.com/">IDCamp</a>. Langsung aja liat contoh lain. Cekidot.</p>
+
+            </article>
+         </div>
+
+         <!-- Width & Height -->
+         <div class="card" id="width">
+            <article>
+               <h2>Width & Height</h2>
+               <br>
+               <div class="wh-box w100 h150" id="wh-box"></div>
+               <br>
+               <br>
+               <div class="wh-button">
+                  <div class="w-button w50 f-l">
+                     Width:
+                     <button class="button button-green" id="w25">25%</button>
+                     <button class="button button-green" id="w50">50%</button>
+                     <button class="button button-green" id="w75">70%</button>
+                     <button class="button button-green active" id="w100">100%</button>
+                  </div>
+                  <div class="h-button w50 f-l">
+                     Height:
+                     <button class="button button-green" id="h50">50px</button>
+                     <button class="button button-green" id="h100">100px</button>
+                     <button class="button button-green active" id="h150">150px</button>
+                     <button class="button button-green" id="h200">200px</button>
+                  </div>
+               </div>
+               <br>
+               <br>
+               <p>Disini, kita mengubah ukuran dari lebar (width) dan tinggi (height) dari suatu elemen. Nah, sama
+                  seperti
+                  yang sebelumnya, pada bagian ini juga dikendalikan oleh JavaScript dalam mengubah attribut dalam HTML.
+                  Nilai attribut yang diubah adalah class. Karena class diubah, otomatis seluruh styling atau CSS yang
+                  ada pada class tersebut ikut berubah.</p>
+            </article>
+         </div>
+
+         <!-- Margin & Padding -->
+         <div class="card" id="margin">
+            <article>
+               <h2>Margin & Padding</h2>
+               <br>
+               <div class="bs-bb w100 h300">
+                  <div class="mp-cbox center">
+                     <div class="mp-box p20 m20 f-l">Ini</div>
+                     <div class="mp-box p20 m20 f-l">Tulisan</div>
+                  </div>
+               </div>
+               <br>
+               <div class="radio-button">
+                  <div class="m-button w50 f-l">
+                     Margin:
+                     <button class="button button-green" id="m0">0px</button>
+                     <button class="button button-green active" id="m20">20px</button>
+                     <button class="button button-green" id="m40">40px</button>
+                     <button class="button button-green" id="m60">60px</button>
+                  </div>
+                  <div class="p-button w50 f-l">
+                     Padding:
+                     <button class="button button-green" id="p0">0px</button>
+                     <button class="button button-green active" id="p20">20px</button>
+                     <button class="button button-green" id="p40">40px</button>
+                     <button class="button button-green" id="p60">60px</button>
+                  </div>
+               </div>
+               <br>
+               <p>Nah... Gimana? Ini adalah pemanfaatan transition dari CSS agar ketika suatu styling berubah maka
+                  dibikin animasi transisinya. Dan untuk melakukannya secara realtime, inilah fungsi dari si
+                  JS(JavaScript) tadi. Masih ada 1 lagi nih. Yaitu Font. Langsung aja ke bawah. Contoh lain dari
+                  pemanfaatannya adalah pada bagian navbar yang mengecil pada saat di scroll, dan setiap menu di navbar
+                  pada saat hover.</p>
+            </article>
+         </div>
+
+         <!-- Font -->
+         <div class="card" id="font">
+            <article>
+               <h2>Font</h2>
+               <div class="flex">
+                  <div class="fg-1">
+                     <button class="button button-green" id="align-l">Kiri</button>
+                     <button class="button button-green active" id="align-c">Tengah</button>
+                     <button class="button button-green" id="align-r">Kanan</button>
+                  </div>
+               </div>
+               <br>
+               <div class="w100 h200 bs-bb p40">
+                  <div class="f30 align-c blk f1 d-b" id="f-box">Power of JS</div>
+               </div>
+               <br>
+               <div class="flex">
+                  <div class="fg-1">
+                     Size:
+                     <button class="button button-green active" id="f30">30px</button>
+                     <button class="button button-green" id="f40">40px</button>
+                     <button class="button button-green" id="f3em">3em</button>
+                     <button class="button button-green" id="f4em">4em</button>
+                  </div>
+                  <div class="fg-1">
+                     Color:
+                     <button class="button button-green active" id="blk">Hitam</button>
+                     <button class="button button-green" id="r">Merah</button>
+                     <button class="button button-green" id="g">Hijau</button>
+                     <button class="button button-green" id="b">Biru</button>
+                  </div>
+               </div>
+               <div class="flex">
+                  <div class="fg-1">
+                     Family:
+                     <button class="button button-green active" id="f1">Font 1</button>
+                     <button class="button button-green" id="f2">Font 2</button>
+                     <button class="button button-green" id="f3">Font 3</button>
+                     <button class="button button-green" id="f4">Font 4</button>
+                  </div>
+                  <div class="fg-1">
+                     Style:
+                     <button class="button button-green" id="d-n">Normal</button>
+                     <button class="button button-green" id="d-i">Italic</button>
+                     <button class="button button-green active" id="d-b">Bold</button>
+                     <button class="button button-green" id="d-u">Under-L</button>
+                  </div>
+               </div>
+               <br>
+               <p>Yuhuuuu. Tulisan itu bisa diubah ubah lo, secara langsung. Mulai dari warna, ukuran, dekorasi teks,
+                  align dan juga font familynya. Dengan memanfaatkan kelebihan JavaScript yag bisa membaca isi dari
+                  document dengan syntax <i>document</i>, perubahan terhadap dokumen HTML dapat langsung terjadi.
+                  Sehingga transisi yang ada di CSS pun berjalan, dan tada.....</p>
+            </article>
+         </div>
+         <!-- Closing -->
+         <div class="card" id="font">
+            <article>
+               <p>Nah, sekarang sudah tau kan. Bahwasanya sebuah website tidak hanya menampilkan kumpulan kata - kata
+                  dan
+                  gambar, namun juga dapat menampilkan interface yang menarik dan enak dipandang oleh user. Untuk
+                  menciptakan tampilan yang User Friendly, harus banyak belajar dan mencari refrensi baik itu dari
+                  website
+                  lain, dari buku, atau dari tutorial.</p>
+               <p>JavaScript sendiri, selain bekerja pada client-side, sebenarnya juga dapat bekerja pada server-side.
+                  Dimana javaScript ini dapat menggantikan peran PHP dalam menghubungkan data dengan database. Hmm...
+                  Masih
+                  banyak ya, yang belum kita tahu.</p>
+               <p>Pada dasarnya, HTML, CSS, dan JavaScript ini adalah sedikit dari komponen utama pembangun website.
+                  Unsur
+                  - unsur ini hanya berperan dalam Front-End Web, yaitu UI/UX(User Interface/User Experience). Nah,
+                  kalau
+                  soal database gimana dong? Itu semua terjadi di belakang layar, atau lebih tepatnya pada sisi server
+                  side. Disini, kita akan lebih banyak menemukan syntax dari bahasa pemograman yang sebenarnya. Juga
+                  lebih
+                  membutuhkan keterampilan dalam memecahkan masalah. Nah, sisi yang satu ini disebut Back-End Web.</p>
+               <p>Untuk bahasa pemogramannya, yang sangat populer adalah PHP. Di mana PHP berbasis OOP atau Object
+                  Oriented
+                  Programming. Dengan konsep ini, lebih mudah dalam melakukan suatu pekerjaan, membuat sebuah modul
+                  untuk
+                  dapat dipakai kembali dan lainnya. Contohnya saja, PHP memiliki PDO, yaitu PHP Data Objects. PDO
+                  merupakan sebuah Object atau interface universal yang disediakan oleh PHP untuk menjalin hubungan
+                  dengan
+                  Database.</p>
+               <p>Terakhir, dalam dunia kerjanya sendiri, banyak sekali pembagian dalam platform Website ini. Namun
+                  tiangnya ada tiga, yaitu Front-End Developer sebagai pengembang dalam UI/UX, Back-End Developer
+                  sebagai
+                  pengembang di sisi server side, dan yang terakhir adalah gabungan dari keduanya, yaitu Full-Stack
+                  Developer. And I Wanna Be Full-Stack Developer. Terima Kasih.</p>
+            </article>
+         </div>
+      </div>
+
+
+      <!-- Aside -->
+      <div class="profile">
+         <aside id="profile" class="f-r">
+            <div class="container">
+               <div class="card">
+                  <img src="assets/author.jpg" alt="Author" class="auth-img" width="100%">
+                  <h1>Author</h1>
+                  <p>Qory Amanah Putra</p>
+                  <p>qoryamanahputra0708@gmail.com</p>
+                  <p>Batusangkar, Tanah Datar, Sumatera Barat</p>
+                  <div class="link-box">
+                     <a href="http://www.linkedin.com/in/qoryamanahputra" class="link"><i
+                           class="fab fa-linkedin fa-2x"></i></a>
+                     <a href="https://github.com/reader00" class="link"><i class="fab fa-github fa-2x"></i></a>
+                     <a href="https://www.instagram.com/qory.ap/" class="link"><i
+                           class="fab fa-instagram fa-2x"></i></a>
+                  </div>
+               </div>
+            </div>
+         </aside>
+      </div>
+   </main>
+
+   <!-- Footer -->
+   <footer>
+      <div class="container bg-a2">
+         <p>Copyright &copy; Qory Amanah Putra</p>
+      </div>
+   </footer>
+
+   <script src="assets/script.js"></script>
+   <script src="https://kit.fontawesome.com/6a16d2dbd9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
